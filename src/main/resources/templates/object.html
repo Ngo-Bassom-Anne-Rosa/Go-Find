@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Verification d'Objet</title>
+</head>
+<body>
+    <h1>Rechercher un objet volé</h1>
+    <form th:action="@{/objets/rechercher}" method="get">
+        <input type="text" name="numeroSerie" placeholder="Entrez le numéro de série" required>
+        <button type="submit">Rechercher</button>
+    </form>
+</body>
+</html>
